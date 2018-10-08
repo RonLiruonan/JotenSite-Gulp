@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RonLiruonan/JotenSite-Gulp.git"
+    "url": "git+https://github.com/ronliruonan/JotenSite-Gulp.git"
   },
   "author": "RonLi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/RonLiruonan/JotenSite-Gulp/issues"
+    "url": "https://github.com/ronliruonan/JotenSite-Gulp/issues"
   },
-  "homepage": "https://github.com/RonLiruonan/JotenSite-Gulp#readme"
+  "homepage": "https://github.com/ronliruonan/JotenSite-Gulp#readme"
 }
