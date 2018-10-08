@@ -1,0 +1,130 @@
+
+/* Standard Menu Reset */
+body, nav, ul, li, a { margin: 0; padding: 0; }     
+ul ul, ul ol, ol ol, ol ul { margin-left:0px; margin-bottom:0px; } 
+       
+a { text-decoration: none; }  
+.dnnnav { list-style: none; *zoom: 1; }   
+.dnnnav ul { list-style: none; }
+
+/* Main Nav Style Code */
+.dnnnav a 							  { padding:32px 10px; font-size:14px; color:#333; text-transform:uppercase; text-decoration:none; -webkit-transition: all 0.8s ease 0s; -moz-transition: all 0.8s ease 0s; -o-transition: all 0.8s ease 0s; transition: all 0.8s ease 0s; }    
+.dnnnav li 							  { position:relative; }   
+.dnnnav > li 					      { float:left; list-style:none; }
+.dnnnav > li > a 				      { padding-bottom:35px; z-index:500; position:relative; }
+         
+.sf-sub-indicator 					  { display:none; } 
+ 
+/* Main current Nav Style Code */  
+.dnnnav .current a, 
+.dnnnav .current a:visited, 
+.dnnnav .current a:active 			  { -webkit-transition: all 0.8s ease 0s; -moz-transition: all 0.8s ease 0s; -o-transition: all 0.8s ease 0s; transition: all 0.8s ease 0s; }
+.dnnnav > li > a 					  { display:block; } 
+.dnnnav > li > a:hover 				  { color:#378AC4; }
+.dnnnav > li:hover > a 				  { color:#378AC4; }
+
+.dnnnav > li ul 					  { background:#fff; padding:0 10px; min-width:215px; position:absolute; left:-9999px;  -moz-box-shadow: 0 0 4px rgba(0,0,0,.4); -webkit-box-shadow: 0 0 4px rgba(0,0,0,.4); box-shadow: 0 0 4px rgba(0,0,0,.4); }
+.dnnnav > li ul li ul 				  { margin-top:0px; }
+.dnnnav > li.hover > ul 			  { left:0; } 
+.dnnnav li li.hover ul 				  { left:100%; top:0; }   
+.dnnnav li li 						  { list-style:none; padding-top:0px; padding-bottom:0px; margin-left:0px; } 
+        
+/* Sub Nav Style Code */ 
+.dnnnav li li 						  { border-bottom:0; }     
+.dnnnav li li a 					  { padding:12px 10px; font-size:14px; opacity:1; color:#333; line-height:18px; font-weight:normal; display: block; z-index:100; border-bottom: 1px solid #eee; }
+.dnnnav li li a:hover 				  { display: block; color:#378AC4; border-radius:0; box-shadow:none; }
+
+.dnnnav ul li a.sf-with-ul 			  { background-image: url("../img/icons/arrows2.png") !important; background-repeat: no-repeat !important; background-position: 93% 50% !important; } 
+.dnnnav ul li a.sf-with-ul:hover 	  { background-image: url("../img/icons/arrows2.png") !important; background-repeat: no-repeat !important; background-position: 93% 50% !important; }
+
+/* Sub current Nav Style Code */ 
+.dnnnav .current ul li a, 
+.dnnnav .current ul li a:visited 	  { color:#333; border-radius:0; box-shadow:none; }   
+.dnnnav .current ul li a:hover 		  { color:#378AC4; }
+
+.dnnnav li.current ul li a,
+.dnnnav li.current ul li a:visited 	  { border-top:0 !important; }
+.dnnnav li.current ul li:last-child a { border-bottom: none !important; }             
+
+.MainMenu_Bg .dnnnav > li > a { line-height:50px; color:#fff; border-left:1px solid #3d3c3c; }
+
+.leftMenu #DeshtopMenu .dnnnav > li ul        { padding-top:26px; } 
+.leftMenu #DeshtopMenu .dnnnav > li ul li ul  { padding-top:0; } 
+.leftMenu.sticky #DeshtopMenu .dnnnav > li ul { padding-top:16px; }
+
+#DeshtopMenu .dnnnav > li ul           { padding-top:17px; }   
+#DeshtopMenu .dnnnav > li ul li ul     { padding-top:0; }       
+#DeshtopMenu .dnnnav > li, 
+#DeshtopRightMenu .dnnnav > li         { margin-top:0; }       
+#DeshtopMenu .dnnnav > li > a, 
+#DeshtopRightMenu .dnnnav > li > a     { padding:0 10px; line-height:40px; }   
+#DeshtopMenu .dnnnav li li a, 
+#DeshtopRightMenu .dnnnav li li a      { padding:8px 15px; line-height:22px; }
+
+#DeshtopMenu                           { margin-top:17px; }    
+#DeshtopRightMenu ul                   { text-align:center; }
+#DeshtopRightMenu > .dnnnav a          { border-right:none; }
+#DeshtopRightMenu .dnnnav > li         { display:inline-block; position:relative; list-style:none; float:none; }
+#DeshtopRightMenu ul ul                { text-align:left; }
+
+/* Left Side Menu Code */
+.LeftSideMenu .dnnnav li               { margin-left:0; position: relative; }
+.LeftSideMenu .dnnnav a                { padding:3px 0; text-decoration:none; -webkit-transition: all 0.8s ease 0s; -moz-transition: all 0.8s ease 0s; -o-transition: all 0.8s ease 0s; transition: all 0.8s ease 0s; }
+.LeftSideMenu .dnnnav > li             { float:left; width:100%; list-style:none; }
+.LeftSideMenu .dnnnav > li > a         { line-height:38px; color:#666; }
+       
+/* Main current Nav Style Code */   
+.LeftSideMenu .dnnnav .current a, 
+.LeftSideMenu .dnnnav .current a:visited, 
+.LeftSideMenu .dnnnav .current a:active{ color:#fff !important; padding-left: 15px; -webkit-transition: all 0.8s ease 0s; -moz-transition: all 0.8s ease 0s; -o-transition: all 0.8s ease 0s; transition: all 0.8s ease 0s; }
+.LeftSideMenu .dnnnav > li > a:hover   { color:#fff !important; background-color:#f8f7f7; padding-left:15px; }
+.LeftSideMenu .dnnnav > li:hover > a   { color:#fff !important; background:#f8f7f7; padding-left:15px; }
+.LeftSideMenu .dnnnav > li ul          { min-width:100%; left:-9999px; position:relative; }
+
+.LeftSideMenu .dnnnav > li ul li ul    { margin-top:0px; }
+.LeftSideMenu .dnnnav > li.hover > ul  { left:0; } 
+.LeftSideMenu .dnnnav li li.hover ul   { left:100%; top:0; } 
+.LeftSideMenu .dnnnav li li            { list-style:none; padding-top:0px; padding-bottom:0px; margin-left:0px;  } 
+        
+/* Sub Nav Style Code */ 
+.LeftSideMenu .dnnnav li li            { border-bottom:0; }
+.LeftSideMenu .dnnnav li li a          { padding:3px 15px; font-size:15px; line-height:34px; font-weight:normal; display: block; z-index:100; }
+.LeftSideMenu .dnnnav li li a:hover    { display: block; background:#378AC4; color:#fff; border-radius:0; box-shadow:none; }
+.LeftSideMenu .dnnnav > li a.sf-with-ul        { background-image: url("../img/icons/arrows2.png") !important; background-repeat: no-repeat !important; background-position: 96% 50% !important; }
+.LeftSideMenu .dnnnav > li a.sf-with-ul:hover  { background-image: url("Arrow.png") !important; background-repeat: no-repeat !important; background-position: 96% 50% !important; }
+.LeftSideMenu .dnnnav ul li a.sf-with-ul       { background-image: url("../img/icons/arrows2.png") !important; background-repeat: no-repeat !important; background-position: 96% 50% !important; }
+.LeftSideMenu .dnnnav ul li a.sf-with-ul:hover { background-image: url("Arrow.png") !important; background-repeat: no-repeat !important; background-position: 96% 50% !important; }
+
+.LeftSideMenu .dnnnav > li.current a.sf-with-ul{ background-image: url("Arrow.png") !important; background-repeat: no-repeat !important; background-position: 96% 50% !important; }
+
+.SmallMenu .dnnnav > li > a 				   { padding-top:15px; padding-bottom:15px; }
+
+@media screen and (max-width:1160px) {
+    .dnnnav > li ul { min-width:245px; }
+    .dnnnav a 		{ padding:32px 10px; font-size:14px; }
+    .dnnnav li li a { font-size:14px; line-height:20px; }
+}   
+    
+@media screen and (max-width:800px) {
+    .dnnnav > li ul { min-width:220px; }
+    .dnnnav a 		{ font-size:12px; } 
+    .dnnnav li li a { padding:10px 10px; font-size:12px; line-height:20px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,135 @@
+
+.c_DNN6_Header .Head                { color:#4F4F4F; font-size:18px; line-height:24px; padding:0 10px 0 0; text-transform:uppercase; }
+.c_DNN6_Header .Title               { margin:1em 0 .5em 0; overflow:hidden; }
+.c_DNN6_Header .Title .TitleBar     { margin:0 -100% 0 0; vertical-align:middle; width: 100%; height: 20px; }   
+.c_DNN6_SubTitle .Head              { color:#4F4F4F; font-size:18px; line-height:30px; padding:0 10px 0 0; text-transform:uppercase; }
+.c_DNN6_SubTitle .Title             { margin:1.35em 0 .5em 0; overflow:hidden; }
+.c_DNN6_SubTitle .Title .TitleBar   { margin:0 -100% 0 0; vertical-align:middle; width: 100%; height: 24px; }
+    
+.Head                               { color:#fff; font-size:18px; border-bottom:none; margin-bottom:0; font-weight:normal; }   
+#clearfix                           { width:100%; float:left; overflow:auto; }
+.Container                          { margin:2em 0 0 0; padding:0; }
+.ctrFont .Head                      { font-family:'open sans', Arial, Tahoma; }   
+.CntPadding                         { padding:0; }
+
+/* saf3+, chrome1+ */
+@media screen and (-webkit-min-device-pixel-ratio:0) { }
+@media all\0 { } /* IE8 uses \0 */
+   
+/*========== H1Container CSS ===========*/
+.H1Container_Title .Head            { color:#df1d63; font-size:32px; line-height:38px; font-family:'open sans', Tahoma; }
+    
+/*========== H2Container CSS ===========*/
+.H2Container_Title .Head            { color:#df1d63; font-size:26px; line-height:38px; font-family:'open sans', Tahoma; }
+.H2Container_Title                  { border-bottom:1px dotted #ececec; }       
+.H2Container_Title h1               { line-height:40px; }
+.H2Container_Title h1 span.Head     { border-bottom:2px solid #df1d63; line-height:40px; padding-bottom:5px; font-size:20px; font-weight:300; }
+.H2Container_Content                { padding-top:30px; }
+
+/*========== FooterContainer CSS =======*/
+.FooterTitle .Head                  { color:#eaeaea; font-size:18px; font-family:'open sans', Tahoma; }
+.FooterTitle                        { border-bottom:1px dotted #eaeef3; }     
+.FooterTitle h1                     { line-height:40px; margin-bottom:0; }
+.FooterTitle h1 span.Head           { border-bottom:3px solid #df1d63; font-size:24px; line-height:46px; padding-bottom:5px; }
+.FtrContent                         { padding-top:20px; }
+
+/*========== H3Container CSS ===========*/
+.H3Container_Title .Head            { color:#df1d63; font-size:20px; font-family:'open sans', Tahoma; }   
+.H3Container_Title h1               { line-height:36px; }
+ 
+/*========== H1TitleBorderContainer CSS */
+.H1TitleContainer                   { border-bottom:1px solid #df1d63; }  
+.H1TitleContainer .Head             { color:#df1d63; font-size:32px; font-family:'open sans', Tahoma; line-height:42px; }   
+.H1ContentContainer                 { padding:10px 0 0 0; }
+
+/*========== H2TitleBorderContainer CSS */
+.H2TitleContainer                   { border-bottom:1px solid #df1d63; }  
+.H2TitleContainer .Head             { color:#df1d63; font-size:26px; line-height:42px; font-family:'open sans', Tahoma; }   
+.H2ContentContainer                 { padding:10px 0 0 0; }
+
+/*========== H3TitleBorderContainer CSS */
+.H3TitleContainer                   { border-bottom:1px solid #df1d63; }  
+.H3TitleContainer .Head             { color:#df1d63; font-size:20px; font-family:'open sans', Tahoma; }    
+.H3TitleContainer h1                { line-height:39px; }  
+.H3ContentContainer                 { padding:10px 0 0 0; }
+                    
+/*========== Container01 ===============*/
+.Container01Title                   { padding:0px 15px; background:#df1d63; border-radius:22px; -moz-border-radius:22px; -webkit-border-radius:22px; behavior:url(/Portals/_default/Skins/Advance/CSS/PIE.htc); position:relative; }
+.Container01Title h1                { line-height:36px; color:#fff; font-size:18px; font-family:Arial, Tahoma; }   
+.Container01Content                 { padding-top:10px; }
+
+/*========== Container02 CSS ===========*/
+.Container02                        { background:#fff; border:1px solid #cecfcf; }   
+.Container02_Title h1               { line-height:36px; font-size:18px; padding:0 15px; background: #df1d63; behavior:url(/Portals/_default/Skins/Advance/CSS/PIE.htc); position:relative; }
+.Container02_content                { padding:8px 10px; }
+
+/*========== Container03 CSS ===========*/
+.Container03Title h1                { padding:0px 15px; color:#fff; font-size:18px; line-height:36px; background:#df1d63; }   
+.Container03Content                 { padding-top:10px; }
+
+/*========== Container04 CSS ===========*/
+.Container04Title .Head             { background:#df1d63; padding:3px 15px; position:relative; }   
+.Container04Title h1                { border-bottom:4px solid #df1d63; font-size:18px; line-height:37px; }   
+.Container04Content                 { padding:8px 0; }
+
+/*========== Container05 CSS ===========*/
+.Container05                        { background:#fff; border:1px solid #cecfcf; -webkit-border-radius:0 0 20px 20px; -moz-border-radius:0 0 20px 20px; -o-border-radius:0 0 20px 20px; border-radius:0 0 20px 20px; behavior:url(/Portals/_default/Skins/Advance/CSS/PIE.htc); position:relative; }
+.Container05Content                 { padding:8px 10px; }   
+.Container05Title h1                { padding:0px 15px; line-height:36px; font-size:18px; background: #df1d63; position:relative; }
+
+/*========== Container06 CSS ===========*/
+.Container06Title .Head             { padding:3px 15px; background:#df1d63; }
+.Container06Title h1                { border-top:4px solid #df1d63; font-size:18px; line-height:34px; }   
+.Container06Content                 { padding:8px 0; }
+                 
+/*========== Container07 CSS ===========*/
+.Container07                        { background:#fff; border:1px solid #cecfcf; }
+.Container07Title h1                { font-size:18px; line-height:29px; border-top:4px solid #df1d63; border-bottom:4px solid #df1d63; font-size:18px; padding:0 15px; }
+.Container07Title .Head             { color:#df1d63; }
+.Container07Content                 { padding: 8px 10px; }
+
+/*========== Container08 CSS ===========*/
+.Container08                        { background:#fff; border:1px solid #cecfcf; -webkit-border-radius:0 12px; -moz-border-radius:0 12px; border-radius:0 12px; behavior: url(/Portals/_default/Skins/Advance/CSS/PIE.htc); position:relative; }
+.Container08Title h1                { padding:0px 18px; font-size:18px; line-height:36px; -webkit-border-radius: 0 12px 0 0; -moz-border-radius:0 12px 0 0; border-radius:0 12px 0 0; background: #df1d63; behavior:url(/Portals/_default/Skins/Advance/CSS/PIE.htc); position:relative; }
+.Container08Content                 { padding:8px 10px; }
+
+/*========== Container09 CSS ===========*/
+.Container09                        { background:#fff; border:1px solid #cecfcf; }
+.Container09Title h1                { font-size:18px; border-left:6px solid #df1d63; border-right:6px solid #df1d63; font-size:18px; padding:0 13px; line-height:35px; }
+.Container09Title .Head             { color:#df1d63; }
+.Container09Title                   { border-bottom:1px solid #cecfcf; }
+.Container09Content                 { padding: 8px 10px; }
+
+/*========== Container10 CSS ===========*/
+.Container10                        { border:1px solid #cecfcf; -moz-border-radius:0px 0px 20px 20px; -webkit-border-radius:0px 0px 20px 20px; border-radius:0px 0px 20px 20px; behavior: url(/Portals/_default/Skins/Advance/CSS/PIE.htc); }
+.Container10Title h1                { border-bottom:1px solid #cecfcf; font-size:18px; line-height:36px; padding:0 15px; }        
+.Container10Title .Head             { color:#df1d63; }
+.Container10Content                 { padding: 8px 10px; }
+
+/*========== Container11 CSS ===========*/
+.Container11                        { background:#fff; border:1px solid #cecfcf; -webkit-border-radius:20px 20px 0 0; -moz-border-radius:20px 20px 0 0; -o-border-radius:20px 20px 0 0; border-radius:20px 20px 0 0; behavior:url(/Portals/_default/Skins/Advance/CSS/PIE.htc); position:relative; }
+.Container11Content                 { padding:8px 10px; }   
+.Container11Title h1                { padding:0px 15px; line-height:36px; font-size:18px; -webkit-border-radius:20px 20px 0 0; -moz-border-radius:20px 20px 0 0; border-radius:20px 20px 0 0; background: #df1d63; behavior:url(/Portals/_default/Skins/Advance/CSS/PIE.htc); position:relative; }
+                  
+/*========== Container12 CSS ===========*/
+.Container12                        { border:1px solid #cecfcf; -webkit-border-radius:12px; -moz-border-radius:12px; border-radius:12px; behavior: url(/Portals/_default/Skins/Advance/CSS/PIE.htc); position:relative; }
+.Container12Content                 { padding:10px; }
+
+/*========== Container13 CSS ===========*/
+.Container13                        { border:1px solid #cecfcf; }
+.Container13Content                 { padding:10px; overflow:auto; }
+ 
+/*========== Container14 CSS ===========*/
+.Container14                        { background:#fff; border:1px solid #cecfcf; -webkit-border-radius:0 20px; -moz-border-radius:0 20px; border-radius:0 20px; behavior: url(/Portals/_default/Skins/Advance/CSS/PIE.htc); position:relative; }
+.Container14Title h1                { padding:0px 18px; font-size:18px; line-height:36px; -webkit-border-radius: 0 20px 0 0; -moz-border-radius:0 20px 0 0; border-radius:0 20px 0 0; background: #df1d63; behavior:url(/Portals/_default/Skins/Advance/CSS/PIE.htc); position:relative; }
+.Container14Content                 { padding:8px 10px; }
+
+/*========== SubTitleContainer CSS ===========*/
+.SubTitleContainer .Head            { color:#333; font-size:18px; padding:0 10px 0 0; }  
+.SubTitleContainer .Title           { margin:1.5em 0 1.2em 0; overflow:hidden; }  
+.SubTitleContainer .Title .TitleBar { margin:0 -100% 0 0; vertical-align:middle; width: 100%; height: 24px; }
+
+
+
+
+

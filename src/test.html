@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--*********************************************-->
+<!-- Copyright (c) 2017, by Joten Tech -->
+<!--*********************************************-->
+<html lang="zh-cn">
+
+<head>
+    @@include('./include/meta.html')
+</head>
+
+<body>
+    <h1 id="sbh" style="position:fixed;top:0;left:0;">124</h1>
+    <button class="btn">button</button>
+    <img class="asyncImg" src='http://localhost/home/content/img/favicon.ico' data-src='http://www.runoob.com/images/pic_bulboff.gif'>
+</body>
+<script>
+    let imgs = document.querySelectorAll('.asyncImg')
+
+    function asyncImg(imgEle) {
+        const realSrc = imgEle.getAttribute('data-src')
+        const tempImg = new Image()
+        tempImg.onload = () => {
+            // console.log(imgEle)
+            imgEle.src = realSrc
+        }
+        tempImg.src = realSrc
+    }
+</script>
+<script>
+    window.onload = () => {
+
+        imgs.forEach((ele) => {
+            console.log()
+            asyncImg(ele)
+        })
+
+        let webWorks;
+        if (Worker) {
+            webWorks = new Worker('./js/workers.js')
+            webWorks.onmessage = function (event) {
+                console.log(event.data)
+            }
+        }
+        setTimeout(() => {
+            webWorks.terminate();
+        }, 100);
+    }
+</script>
+
+</html>

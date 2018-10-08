@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <title>正荣集团</title>
+    <!-- 引入 FrozenUI -->
+    <!-- <link rel="stylesheet" href="http://i.gtimg.cn/vipstyle/frozenui/2.0.0/css/frozen.css" /> -->
+    <link rel="stylesheet" href="full.css" />
+    <style>
+        .ow {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #21997D;
+            background-clip: padding-box;
+        }
+
+        .ow-red {
+            background-color: #f74c31;
+        }
+
+        .ow-down::after {
+            transform: rotate(90deg);
+        }
+
+        td {
+            line-height: 1.8;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .nn {
+            display: inline-block;
+            width: 8em;
+            text-align: right;
+        }
+
+        /* .nn::after {
+            display: inline-block;
+            content: '';
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+        } */
+    </style>
+</head>
+
+<body>
+    <div style="height:2px;background-color:#fff;"></div>
+    <section class="ui-container">
+        <button class="ui-btn-lg ui-btn-primary">公务车购置立项申请流程</button>
+        <div class="ui-tooltips ui-tooltips-guide" style="margin-top:10px;">
+            <!-- ui-tooltips-cnt-link  -->
+            <div class="ui-tooltips-cnt ui-border-b">
+                <i class="ui-icon-talk"></i>张三 于2018-09-27 18:03发起
+            </div>
+        </div>
+        <div class="ui-tab" style="margin-top:10px;">
+            <ul class="ui-tab-nav ui-border-b">
+                <li class="current" data-content="基本信息"><span>基本信息</span></li>
+                <li data-content="审批要点"><span>审批要点</span></li>
+                <li data-content="流程记录"><span>流程记录</span></li>
+            </ul>
+            <!-- 基本信息 -->
+            <ul class="ui-list ui-list-nospace ui-border-tb 基本信息">
+                <li class="ui-border-t ">
+                    <div class="ui-list-info">
+                        <p class="ui-nowrap">
+                            <span class="nn">立项申请名称：</span>
+                            <span style="color:#000;"> 公务车购置立项申请</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="ui-border-t">
+                    <div class="ui-list-info">
+                        <p class="ui-nowrap">
+                            <span class="nn">公司级别：</span>
+                            <span style="color:#000;"> 3级</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="ui-border-t">
+                    <div class="ui-list-info">
+                        <p class="ui-nowrap">
+                            <span class="nn">公司名称：</span>
+                            <span style="color:#000;">福州区域公司</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="ui-border-t">
+                    <div class="ui-list-info">
+                        <p class="ui-nowrap">
+                            <span class="nn">现有人数：</span>
+                            <span style="color:#000;">25</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="ui-border-t">
+                    <div class="ui-list-info">
+                        <p class="ui-nowrap">
+                            <span class="nn">公务车管控类型：</span>
+                            <span style="color:#000;">区域公司总部</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="ui-border-t">
+                    <div class="ui-list-info">
+                        <p class="ui-nowrap">
+                            <span class="nn">预算金额(万元)：</span>
+                            <span style="color:#000;">35</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="ui-border-t">
+                    <div class="ui-list-info">
+                        <p class="ui-nowrap">
+                            <span class="nn">购置台数：</span>
+
+                            <span style="color:#000;">5</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="ui-border-t">
+                    <div class="ui-list-info">
+                        <p class="ui-nowrap">
+                            <span class="nn">车型：</span>
+                            <span style="color:#000;">别克</span>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <!-- <ul class="ui-list ui-list-nospace ui-border-tb 基本信息">
+                <li class="ui-border-t ">
+                    <div class="ui-list-info">
+                        <p class="ui-nowrap">立项申请名称</p>
+                        <h6 class="ui-nowrap">公务车购置立项申请</h6>
+                    </div>
+                </li>
+                <li class="ui-border-t">
+                    <div class="ui-list-info">
+                        <p class="ui-nowrap">公司级别</p>
+                        <h6 class="ui-nowrap">3级</h6>
+                    </div>
+                </li>
+                <li class="ui-border-t">
+                    <div class="ui-list-info">
+                        <p class="ui-nowrap">公司名称</p>
+                        <h6 class="ui-nowrap">福州区域公司</h6>
+                    </div>
+                </li>
+                <li class="ui-border-t">
+                    <div class="ui-list-info">
+                        <p class="ui-nowrap">现有人数</p>
+                        <h6 class="ui-nowrap">25</h6>
+                    </div>
+                </li>
+                <li class="ui-border-t">
+                    <div class="ui-list-info">
+                        <p class="ui-nowrap">公务车管控类型</p>
+                        <h6 class="ui-nowrap">区域公司总部</h6>
+                    </div>
+                </li>
+                <li class="ui-border-t">
+                    <div class="ui-list-info">
+                        <p class="ui-nowrap">预算金额(万元)</p>
+                        <h6 class="ui-nowrap">35</h6>
+                    </div>
+                </li>
+                <li class="ui-border-t">
+                    <div class="ui-list-info">
+                        <p class="ui-nowrap">购置台数</p>
+                        <h6 class="ui-nowrap">5</h6>
+                    </div>
+                </li>
+                <li class="ui-border-t">
+                    <div class="ui-list-info">
+                        <p class="ui-nowrap">车型</p>
+                        <h6 class="ui-nowrap">别克</h6>
+                    </div>
+                </li>
+            </ul> -->
+            <!-- 审批要点 -->
+            <section class="审批要点 ui-panel ui-panel-center ui-border-tb" style="display:none;">
+                <h4 class="ui-arrowlink ow-down" style="-webkit-box-align: start;line-height: 2.6;color:#585858;">公务车数量管控
+                    <span class="ui-panel-title-tips"></span></h4>
+                <div style="width:100%;box-sizing:border-box;overflow-y:hidden;">
+                    <table class="ui-table ui-border-tb" style="min-width:1600px;background-color:#fff;">
+                        <thead>
+                            <tr>
+                                <td style="width:4em;">状态</td>
+                                <td style="min-width:20em; text-align: left;">类型</td>
+                                <td style="width:4em;">数量</td>
+                                <td style="min-width:30em;text-align: left;">允许配置公务车标准(A级区域公司)</td>
+                                <td style="width:11em;">允许配置公务车台数A</td>
+                                <td style="width:14em;">目前车辆数量 (含本次拟购)B</td>
+                                <td style="width:7em;">差异数C=A-B</td>
+                                <td style="width:5em;">本次新增</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="ow"></i></td>
+                                <td style=" text-align: left;">区域公司总部</td>
+                                <td>1</td>
+                                <td style=" text-align: left;">区域总部可配1台</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><i class="ow"></i></td>
+                                <td style=" text-align: left;">所含城市公司/A类项目公司数</td>
+                                <td>10</td>
+                                <td style=" text-align: left;">每超过3个可增设1辆</td>
+                                <td>3</td>
+                                <td>0</td>
+                                <td>3</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><i class="ow ow-red"></i></td>
+                                <td style=" text-align: left;">在建项目数(自有+主导操盘+联席操盘)</td>
+                                <td>1</td>
+                                <td style=" text-align: left;">每超过5个项目可增配1辆</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><i class="ow"></i></td>
+                                <td style=" text-align: left;"> 距离区域公司超30公里且管辖项目超过3个的B/C类项目公司数</td>
+                                <td>1</td>
+                                <td style=" text-align: left;">距离区域公司超30公里且管辖项目超过3个的B/C类项目公司数</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td> </td>
+                                <td colspan="3" style="text-align:left;">合计</td>
+                                <td>7</td>
+                                <td>0</td>
+                                <td>7</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="审批要点 ui-panel ui-panel-center ui-border-tb" style="display:none;">
+                <h4 class="ui-arrowlink ow-down" style="-webkit-box-align: start;line-height: 2.6;color:#585858;">公务车车型管控<span
+                        class="ui-panel-title-tips"></span></h4>
+
+                <table class="ui-table ui-border-tb" style="background:#fff;">
+                    <thead>
+                        <tr>
+                            <td style="width:4em;">状态</td>
+                            <td style="width:4em;">类型</td>
+                            <td style="width:6em;">车型标准</td>
+                            <td>实际购置车型</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="ow ow-red"></i></td>
+                            <td>车型</td>
+                            <td>丰田/别克</td>
+                            <td>别克</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="审批要点 ui-panel ui-panel-center ui-border-tb" style="display:none;">
+                <h4 class="ui-arrowlink ow-down" style="-webkit-box-align: start;line-height: 2.6;color:#585858;">公务车单价管控<span
+                        class="ui-panel-title-tips"></span></h4>
+                <table class="审批要点 ui-table ui-border-tb" style="background:#fff;">
+                    <thead>
+                        <tr>
+                            <td style="width:4em;">状态</td>
+                            <td style="width:4em;">类型</td>
+                            <td style="width:6em;">车价标准</td>
+                            <td>实际车价</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="ow"></i></td>
+                            <td>车价</td>
+                            <td>
+                                &lt;= 60万</td>
+                            <td>0万
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <!-- 流程记录 -->
+        <ul class="ui-list ui-list-nospace ui-border-tb 流程记录" style="display:none;">
+            <li class="ui-border-t">
+                <div class="ui-list-info">
+                    <p class="ui-nowrap" style="position:relative;">
+                        <i class="ow"></i> 申请人<span style="position:absolute;right:0;font-size:inherit;">张文涛(提交)</span>
+                    </p>
+                    <h6 class="ui-nowrap">请领导审批</h6>
+                    <i style="color:#777;font-size:13px;">2018-09-04 12:07</i>
+                </div>
+            </li>
+            <li class="ui-border-t">
+                <div class="ui-list-info">
+                    <p class="ui-nowrap" style="position:relative;">
+                        <i class="ow"></i> 合同第一审批人<span style="position:absolute;right:0;font-size:inherit;">张文涛(同意)</span>
+                    </p>
+                    <h6 class="ui-nowrap">同意</h6>
+                    <i style="color:#777;font-size:13px;">2018-09-05 9:07</i>
+                </div>
+            </li>
+            <li class="ui-border-t">
+                <div class="ui-list-info">
+                    <p class="ui-nowrap" style="position:relative;">
+                        <i class="ow"></i> 区域法务负责人<span style="position:absolute;right:0;font-size:inherit;">王贵杰(同意)</span>
+                    </p>
+                    <h6 class="ui-nowrap">此合同已经线下审批</h6>
+                    <i style="color:#777;font-size:13px;">2018-09-06 12:07</i>
+                </div>
+            </li>
+            <li class="ui-border-t">
+                <div class="ui-list-info">
+                    <p class="ui-nowrap" style="position:relative;">
+                        <i class="ow ow-red"></i> 财务负责人<span style="position:absolute;right:0;font-size:inherit;">李杰(不同意)</span>
+                    </p>
+                    <h6 class="ui-nowrap">不同意，驳回</h6>
+                    <i style="color:#777;font-size:13px;">2018-09-07 7:07</i>
+                </div>
+            </li>
+        </ul>
+        </div>
+
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('.ui-tab-nav > li').click(function () {
+                $('.ui-tab-nav > li').removeClass('current');
+                $('.ui-list, .审批要点').hide();
+                $(this).addClass('current');
+                let relaContent = $(this).attr('data-content');
+                $('.' + relaContent).show();
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--*********************************************-->
+<!-- Copyright (c) 2017, by Joten Tech -->
+<!--*********************************************-->
+<html lang="zh-cn">
+
+<head>
+    <title>卓腾科技(Joten Tech) </title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="description" content="卓腾(北京)科技有限公司 公司简介 JotenTech">
+<meta name="keywords" content="卓腾,卓腾北京,卓腾科技,卓腾北京科技,卓腾(北京)科技,卓腾(北京)科技有限公司">
+<meta name="robots" content="index, fllow">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" showonquery="False" querystring="Desktop">
+<link rel="shorcut icon" href="./content/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <h1 id="sbh" style="position:fixed;top:0;left:0;">124</h1>
+    <button class="btn">button</button>
+    <img class="asyncImg" src='http://localhost/home/content/img/favicon.ico' data-src='http://www.runoob.com/images/pic_bulboff.gif'>
+</body>
+<script>
+    let imgs = document.querySelectorAll('.asyncImg')
+
+    function asyncImg(imgEle) {
+        const realSrc = imgEle.getAttribute('data-src')
+        const tempImg = new Image()
+        tempImg.onload = () => {
+            // console.log(imgEle)
+            imgEle.src = realSrc
+        }
+        tempImg.src = realSrc
+    }
+</script>
+<script>
+    window.onload = () => {
+
+        imgs.forEach((ele) => {
+            console.log()
+            asyncImg(ele)
+        })
+
+        let webWorks;
+        if (Worker) {
+            webWorks = new Worker('./js/workers.js')
+            webWorks.onmessage = function (event) {
+                console.log(event.data)
+            }
+        }
+        setTimeout(() => {
+            webWorks.terminate();
+        }, 100);
+    }
+</script>
+
+</html>
