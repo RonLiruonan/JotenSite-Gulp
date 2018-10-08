@@ -8,3 +8,4 @@ yarn-error.log*
 *.vue.vux.*
 src/main.js
 package-lock.json
+.vscode/
