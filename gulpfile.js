@@ -11,7 +11,7 @@ gulp.task('default', ['copy_js', 'copy_content', 'fileinclude','serve'], functio
 gulp.task('serve', function () {
     broswer.init({
         server: {
-            baseDir: 'dist'
+            baseDir: 'docs'
         },
         port: 8000
     });
@@ -24,14 +24,14 @@ gulp.task('fileinclude', function () {
             prefix: '@@',
             basepath: '@file'
         }))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('docs'))
 })
 
 gulp.task('copy_content', function () {
     return gulp.src('src/content/**/*')
-        .pipe(gulp.dest('dist/content/'))
+        .pipe(gulp.dest('docs/content/'))
 })
 gulp.task('copy_js', function () {
     return gulp.src('src/js/**/*')
-        .pipe(gulp.dest('dist/js/'))
+        .pipe(gulp.dest('docs/js/'))
 })
