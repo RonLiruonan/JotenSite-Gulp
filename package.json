@@ -1,0 +1,26 @@
+{
+  "name": "jotensite-gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.26.0",
+    "gulp": "^3.9.1",
+    "gulp-copy": "^4.0.0",
+    "gulp-file-include": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RonLiruonan/JotenSite-Gulp.git"
+  },
+  "author": "RonLi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RonLiruonan/JotenSite-Gulp/issues"
+  },
+  "homepage": "https://github.com/RonLiruonan/JotenSite-Gulp#readme"
+}
