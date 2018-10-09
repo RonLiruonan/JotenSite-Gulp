@@ -1,8 +1,9 @@
 const gulp = require('gulp')
 const fileinclude = require('gulp-file-include')
+const imagemin = require('gulp-imagemin')
 const broswer = require('browser-sync').create()
 
-gulp.task('default', ['copy_js', 'copy_content', 'fileinclude','serve'], function () {
+gulp.task('default', ['copy_js', 'copy_content', 'fileinclude', 'serve'], function () {
     console.log('ron')
 })
 // gulp.task('watch', ['fileinclude'], function () {
@@ -34,4 +35,10 @@ gulp.task('copy_content', function () {
 gulp.task('copy_js', function () {
     return gulp.src('src/js/**/*')
         .pipe(gulp.dest('docs/js/'))
+})
+
+gulp.task('imgMin_img', function () {
+    return gulp.src(['src/content/img/*.jpg','src/content/img/*.png'])
+        .pipe(imagemin({ progressive: true }))
+        .pipe(gulp.dest('docs/content/img/'))
 })

@@ -7,7 +7,8 @@
     "browser-sync": "^2.26.0",
     "gulp": "^3.9.1",
     "gulp-copy": "^4.0.0",
-    "gulp-file-include": "^2.0.1"
+    "gulp-file-include": "^2.0.1",
+    "gulp-imagemin": "^4.1.0"
   },
   "devDependencies": {},
   "scripts": {
